@@ -4,4 +4,4 @@ langchain-chroma
 langchain-community
 streamlit
 python-dotenv
-pysqlite3
+pysqlite3-binary
