@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 
 @st.cache_resource
 def load_and_return_query_engine():
-    gllm = ChatGroq(model="llama3-8b-8192", api_key=os.getenv("GROQ_API_KEY"), temperature=0.0000000000001, seed=3242)
+    gllm = ChatGroq(model="llama-3.1-70b-versatile", api_key=os.getenv("GROQ_API_KEY"), temperature=0.0000000000001, seed=3242)
 
     embed_model = HuggingFaceBgeEmbeddings(model_name="BAAI/bge-large-en-v1.5", model_kwargs={"device":"cpu"}, encode_kwargs={'normalize_embeddings': True})
 
