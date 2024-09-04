@@ -21,7 +21,7 @@ from langchain_groq import ChatGroq
 def load_and_return_query_engine():
     # gllm = Groq(model="mixtral-8x7b-32768", api_key='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', temperature=0.0)
     # gllm = Ollama(model="mistral")
-    gllm = ChatGroq(model="llama3-8b-8192", temperature=0.0000000000001, seed=3242)
+    gllm = ChatGroq(model="llama3-8b-8192", api_key=os.getenv("GROQ_API_KEY"), temperature=0.0000000000001, seed=3242)
 
     embed_model = HuggingFaceBgeEmbeddings(model_name="BAAI/bge-large-en-v1.5", model_kwargs={"device":"cpu"}, encode_kwargs={'normalize_embeddings': True})
 

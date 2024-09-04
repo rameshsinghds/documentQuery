@@ -3,3 +3,5 @@ langchain-groq
 langchain-chroma
 langchain-community
 streamlit
+python-dotenv
+pysqlite3
