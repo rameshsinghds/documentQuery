@@ -1,4 +1,3 @@
-protobuf==3.20.*
 langchain
 langchain-groq
 langchain-chroma
@@ -6,3 +5,4 @@ langchain-community
 streamlit
 python-dotenv
 pysqlite3-binary
+sentence_transformers
