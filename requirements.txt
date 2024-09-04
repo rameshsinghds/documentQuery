@@ -1,0 +1,6 @@
+langchain
+langchain-groq
+chromdb
+langchain-chroma
+langchain-community
+streamlit
